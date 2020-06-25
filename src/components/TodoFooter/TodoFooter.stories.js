@@ -19,6 +19,7 @@ export const TodoFooterStory = () => (
       "All",
       "nowShowing"
     )}
+    onNowShowingChange={action("onNowShowingChange")}
     onClearCompleted={action("onClearCompleted")}
   />
 )

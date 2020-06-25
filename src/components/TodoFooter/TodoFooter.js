@@ -1,9 +1,11 @@
 import React from "react"
 import classNames from "classnames"
+import { ALL_SHOWING, ACTIVE_SHOWING, COMPLETED_SHOWING } from "../../constants"
 
 const TodoFooter = ({
   count,
   completedCount,
+  onNowShowingChange,
   nowShowing,
   onClearCompleted,
 }) => {
@@ -16,23 +18,28 @@ const TodoFooter = ({
         <li>
           <a
             href="#/"
-            className={classNames({ selected: nowShowing === "All" })}
+            className={classNames({ selected: nowShowing === ALL_SHOWING })}
+            onClick={() => onNowShowingChange(ALL_SHOWING)}
           >
             All
           </a>
         </li>{" "}
         <li>
           <a
-            href="#/active"
-            className={classNames({ selected: nowShowing === "Active" })}
+            href="#/"
+            className={classNames({ selected: nowShowing === ACTIVE_SHOWING })}
+            onClick={() => onNowShowingChange(ACTIVE_SHOWING)}
           >
             Active
           </a>
         </li>{" "}
         <li>
           <a
-            href="#/completed"
-            className={classNames({ selected: nowShowing === "Completed" })}
+            href="#/"
+            className={classNames({
+              selected: nowShowing === COMPLETED_SHOWING,
+            })}
+            onClick={() => onNowShowingChange(COMPLETED_SHOWING)}
           >
             Completed
           </a>
