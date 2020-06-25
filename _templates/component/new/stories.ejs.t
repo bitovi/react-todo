@@ -9,7 +9,7 @@ export default {
   component: <%= name %>,
 }
 
-<% const passedProps = props.split(',').map(prop => `${prop.trim()}={\`\`}`).join(" ") -%>
+<% const passedProps = props && props.split(',').map(prop => `${prop.trim()}={\`\`}`).join(" ") -%>
 export const <%= name %>Story = () => (
   <<%= name %> <%= passedProps %> />
 )

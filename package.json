@@ -6,9 +6,11 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "classnames": "^2.2.6",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "todomvc-app-css": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,6 +43,7 @@
   },
   "devDependencies": {
     "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/preset-create-react-app": "^3.1.1",
@@ -49,7 +52,8 @@
     "husky": "^4.2.5",
     "hygen": "^5.0.3",
     "lint-staged": "^10.2.11",
-    "start-server-and-test": "^1.11.0"
+    "start-server-and-test": "^1.11.0",
+    "storybook-addon-smart-knobs": "^6.0.2"
   },
   "husky": {
     "hooks": {
