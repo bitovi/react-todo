@@ -23,7 +23,16 @@ const TodoList = () => {
         />
       </header>
       <section className="main">
-        <input id="toggle-all" className="toggle-all" type="checkbox" />
+        <input
+          id="toggle-all"
+          className="toggle-all"
+          type="checkbox"
+          onClick={() =>
+            todos.forEach((todo, i) =>
+              updateTodoAtIndex(todos, i, { text: todo.text, completed: true })
+            )
+          }
+        />
         <label htmlFor="toggle-all" />
         <ul className="todo-list">
           {filterTodosByNowShowing(todos, nowShowing).map((todo, i) => (

@@ -12,7 +12,7 @@ const TodoItem = ({ todo, onToggle, onDestroy, onSave }) => {
 
   return (
     <li className={classNames({ completed: todo.completed, editing: editing })}>
-      <div className="view">
+      <div className="view" name={todo.text}>
         <input
           className="toggle"
           type="checkbox"

@@ -49,6 +49,7 @@
     "@storybook/preset-create-react-app": "^3.1.1",
     "@storybook/react": "^5.3.19",
     "cypress": "^4.8.0",
+    "eslint-plugin-cypress": "^2.11.1",
     "husky": "^4.2.5",
     "hygen": "^5.0.3",
     "lint-staged": "^10.2.11",
